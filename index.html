@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>theHam</title>
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="js/jquery-3.6.3.min.js"></script>
+    <script src="js/masonry.min.js"></script>
+    <script src="js/imagesloaded.min.js"></script>
+</head>
+<body>
+<div class="wrapper">
+    <div class="header-wrapper parallax" id="header">
+        <header>
+            <div class="nav-wrapper">
+                <div class="container">
+                    <nav class="nav">
+                        <div class="nav-logo">
+                            <a class="nav-logo-link" href="#">
+                                <div class="nav-logo-img-hexagon">
+                                    <div class="nav-logo-img-title">H</div>
+                                </div>
+                                <div class="nav-logo-title">
+                                    <span class="nav-logo-title-small">the</span><span
+                                        class="nav-logo-title-large">Ham</span>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="nav-action-group">
+                            <ul class="nav-menu">
+                                <li class="nav-menu-item"><a class="nav-menu-link"
+                                                             data-goto='.header-wrapper'
+                                                             href="#">HOME</a>
+                                </li>
+                                <li class="nav-menu-item"><a class="nav-menu-link"
+                                                             data-goto='.advantages'
+                                                             href="#">ABOUT</a></li>
+                                <li class="nav-menu-item"><a class="nav-menu-link"
+                                                             data-goto='.services-wrapper'
+                                                             href="#">SERVICE</a>
+                                </li>
+                                <li class="nav-menu-item"><a class="nav-menu-link"
+                                                             data-goto='.our-portfolio-wrapper'
+                                                             href="#">WORK</a></li>
+                                <li class="nav-menu-item"><a class="nav-menu-link"
+                                                             data-goto='.news-wrapper'
+                                                             href="#">BLOG</a>
+                                </li>
+                                <li class="nav-menu-item"><a class="nav-menu-link"
+                                                             data-goto='.feedback-wrapper'
+                                                             href="#">TESTIMONIAL</a>
+                                </li>
+                                <li class="nav-menu-item"><a class="nav-menu-link "
+                                                             data-goto='.images-gallery-wrapper'
+                                                             href="#">GALLERY</a></li>
+                            </ul>
+                            <label class="nav-search-label" for="nav-search"><input id="nav-search" placeholder="Search"
+                                                                                    type="text"> <img
+                                    alt="search icon" class="nav-search-icon"
+                                    src="images/search_icon.png"></label>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <section class="header-section container">
+                <div class="header-text">
+                    <h2>THE HAM IS<span> WORDPRESS THEME</span></h2>
+                    <h1>WE ARE CREATIVE</h1>
+                    <h3>Just Buy And Enjoy These Awesome Features</h3>
+                </div>
+                <div class="header-btn-container">
+                    <button class="btn btn-explore-now">EXPLORE NOW</button>
+                    <button class="btn btn-purchase-now">PURCHASE NOW</button>
+                </div>
+            </section>
+        </header>
+    </div>
+
+    <main class="main">
+        <div class="advantages" id="advantages">
+            <div class="advantages-item">
+                <div class="advantages-item-image-wrapper">
+                    <img alt="pointer" class="advantages-img" src="images/pointer.png">
+                </div>
+                <p class="advantages-title">Different theme option</p>
+            </div>
+            <div class="advantages-item">
+                <div class="advantages-item-image-wrapper">
+                    <img alt="diamond" class="advantages-img" src="images/diamond.png">
+                </div>
+                <p class="advantages-title">Fully customizable</p>
+            </div>
+            <div class="advantages-item">
+                <div class="advantages-item-image-wrapper">
+                    <img alt="bulb" class="advantages-img" src="images/bulb.png">
+                </div>
+                <p class="advantages-title">Unlimited support</p>
+            </div>
+            <div class="advantages-item">
+                <div class="advantages-item-image-wrapper">
+                    <img alt="devices" class="advantages-img" src="images/devices.png">
+                </div>
+                <p class="advantages-title">Responsive all device</p>
+            </div>
+        </div>
+        <section class="container services-wrapper" id="services">
+            <h2 class="section-title section-title-services">Our Services</h2>
+            <ul class="services-tabs">
+                <li class="services-tabs-title active" data-name="Web Design">Web Design</li>
+                <li class="services-tabs-title" data-name="Graphic Design">Graphic Design</li>
+                <li class="services-tabs-title" data-name="Online Support">Online Support</li>
+                <li class="services-tabs-title" data-name="App Design">App Design</li>
+                <li class="services-tabs-title" data-name="Online Marketing">Online Marketing</li>
+                <li class="services-tabs-title" data-name="Seo Service">Seo Service</li>
+            </ul>
+            <div class="services-tabs-content active" data-name="Web Design"><img alt="Design"
+                                                                                  class="services-tabs-img"
+                                                                                  src="images/our_services/web_design.jpg">
+                <p class="services-tabs-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias earum eos
+                    esse modi neque, officia sapiente sequi velit? Aliquam, aliquid et harum hic iste quos repellendus
+                    sapiente. Atque, ipsa sapiente!</p>
+            </div>
+            <div class="services-tabs-content" data-name="Graphic Design"><img alt="Graphic Design"
+                                                                               class="services-tabs-img"
+                                                                               src="images/our_services/graphic_design.jpg">
+                <p class="services-tabs-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto
+                    asperiores, consequuntur dignissimos doloremque eos facere facilis illo ipsam iste iusto maxime
+                    nesciunt nihil perferendis perspiciatis quis quo sed. Alias consectetur consequatur cupiditate dicta
+                    eius esse hic impedit ipsam magnam maiores minima, necessitatibus nihil odio recusandae reiciendis
+                    sint temporibus vel, voluptatibus!</p>
+            </div>
+            <div class="services-tabs-content" data-name="Online Support"><img alt="Online support"
+                                                                               class="services-tabs-img"
+                                                                               src="images/our_services/online_support.jpg">
+                <p class="services-tabs-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis,
+                    iusto, quas. Aliquid amet cum doloribus, ducimus explicabo facere minima modi, neque quaerat, quas
+                    quia tempora! Aspernatur explicabo fugiat id iusto quae, quidem sapiente sequi tempora?</p>
+            </div>
+            <div class="services-tabs-content" data-name="App Design"><img alt="App Design" class="services-tabs-img"
+                                                                           src="images/our_services/app_design.jpg">
+                <p class="services-tabs-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae
+                    consectetur cupiditate est laudantium maiores pariatur quidem, sed soluta. Ad assumenda eaque labore
+                    non pariatur, perferendis recusandae reiciendis reprehenderit voluptatibus? Beatae cupiditate
+                    quibusdam rerum? Commodi consequatur deserunt hic natus possimus quam, quia quo suscipit! Eos
+                    obcaecati, possimus? Alias dolore excepturi vero. Ab accusamus accusantium amet, autem deleniti
+                    distinctio dolor eius est fugiat harum in ipsa libero maxime molestias nulla, omnis perferendis
+                    quaerat quibusdam quidem repellendus reprehenderit tempora veniam, voluptate! Ab, aspernatur.</p>
+            </div>
+            <div class="services-tabs-content" data-name="Online Marketing"><img alt="Online Marketing"
+                                                                                 class="services-tabs-img"
+                                                                                 src="images/our_services/online_marketing.jpg">
+                <p class="services-tabs-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur cum
+                    provident soluta.</p>
+            </div>
+            <div class="services-tabs-content" data-name="Seo Service"><img alt="Seo Service" class="services-tabs-img"
+                                                                            src="images/our_services/seo_service.jpg">
+                <p class="services-tabs-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi
+                    consequatur dignissimos eaque est, eum expedita fugit ipsa ipsum iure iusto laborum libero modi
+                    natus nemo odio quae qui quo repellendus similique sit tempore temporibus ut voluptatum? Cum
+                    explicabo inventore iste iure omnis sequi sunt totam ullam! Ad adipisci asperiores consectetur ea
+                    est excepturi exercitationem inventore minus optio pariatur perferendis repellendus saepe, ut. Ab
+                    aliquam aperiam assumenda eaque esse eum in laboriosam laborum laudantium libero minima molestiae
+                    molestias nam natus nemo nesciunt non, nulla omnis porro praesentium quaerat quibusdam quos,
+                    recusandae sit soluta vel voluptates! Blanditiis consequatur modi pariatur voluptates.</p>
+            </div>
+        </section>
+        <section class="fast-buying">
+            <div class="container">
+                <h2 class="fast-buying-title">Everything is ready. just buy and install now</h2>
+                <p class="fast-buying-p">Smooth reliable, responsive ready, perfect portfolio, unique blog layout and
+                    many many options for you</p>
+                <button class="btn btn-purchase">PURCHASE NOW</button>
+            </div>
+        </section>
+        <section>
+            <div class="bg-portfolio">
+                <div class="container our-portfolio-wrapper">
+                    <h2 class="section-title section-title-portfolio">Our Amazing Work</h2>
+                    <ul class="our-portfolio">
+                        <li class="our-portfolio-category active" data-name="all">All</li>
+                        <li class="our-portfolio-category" data-name="graphic-design">Graphic Design</li>
+                        <li class="our-portfolio-category" data-name="web-design">Web Design</li>
+                        <li class="our-portfolio-category" data-name="landing-pages">Landing Pages</li>
+                        <li class="our-portfolio-category" data-name="wordpress">Wordpress</li>
+                    </ul>
+                    <div class="our-portfolio-gallery">
+
+                    </div>
+                    <button class="btn btn-load-more btn-load-more-portfolio">Load more</button>
+                    <div class="clock-loader clock-loader-portfolio"></div>
+                </div>
+            </div>
+
+        </section>
+        <section class="container news-wrapper">
+            <div class="section-title section-title-news">Breaking News</div>
+            <div class="news-cards">
+                <div class="news-card">
+                    <a class="news-card-link" href="#">
+                        <img alt="man with camera" class="news-card-image"
+                             src="images/breaking_news/breaking_news1.png">
+                        <div class="news-card-info">
+                            <h3 class="news-card-title">Amazing Blog Post</h3>
+                            <div class="news-card-upload-info">
+                                <p class="news-card-author">By admin</p>
+                                <a class="news-card-comment" href="#"></a>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="news-card-upload-date">
+                        <p class="news-card-upload-date-day"></p>
+                        <p class="news-card-upload-date-month"></p>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <a class="news-card-link" href="#">
+                        <img alt="Fireplace" class="news-card-image"
+                             src="images/breaking_news/breaking_news2.png">
+                        <div class="news-card-info">
+                            <h3 class="news-card-title">Amazing Blog Post</h3>
+                            <div class="news-card-upload-info">
+                                <p class="news-card-author">By admin</p>
+                                <a class="news-card-comment" href="#"></a>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="news-card-upload-date">
+                        <p class="news-card-upload-date-day"></p>
+                        <p class="news-card-upload-date-month"></p>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <a class="news-card-link" href="#">
+                        <img alt="man on bicycle" class="news-card-image"
+                             src="images/breaking_news/breaking_news3.png">
+                        <div class="news-card-info">
+                            <h3 class="news-card-title">Amazing Blog Post</h3>
+                            <div class="news-card-upload-info">
+                                <p class="news-card-author">By admin</p>
+                                <a class="news-card-comment" href="#"></a>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="news-card-upload-date">
+                        <p class="news-card-upload-date-day"></p>
+                        <p class="news-card-upload-date-month"></p>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <a class="news-card-link" href="#">
+                        <img alt="hand writes on a tablet" class="news-card-image"
+                             src="images/breaking_news/breaking_news4.png">
+                        <div class="news-card-info">
+                            <h3 class="news-card-title">Amazing Blog Post</h3>
+                            <div class="news-card-upload-info">
+                                <p class="news-card-author">By admin</p>
+                                <a class="news-card-comment" href="#"></a>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="news-card-upload-date">
+                        <p class="news-card-upload-date-day"></p>
+                        <p class="news-card-upload-date-month"></p>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <a class="news-card-link" href="#">
+                        <img alt="bird on the pier" class="news-card-image"
+                             src="images/breaking_news/breaking_news5.png">
+                        <div class="news-card-info">
+                            <h3 class="news-card-title">Amazing Blog Post</h3>
+                            <div class="news-card-upload-info">
+                                <p class="news-card-author">By admin</p>
+                                <a class="news-card-comment" href="#"></a>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="news-card-upload-date">
+                        <p class="news-card-upload-date-day"></p>
+                        <p class="news-card-upload-date-month"></p>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <a class="news-card-link" href="#">
+                        <img alt="man on bicycle" class="news-card-image"
+                             src="images/breaking_news/breaking_news6.png">
+                        <div class="news-card-info">
+                            <h3 class="news-card-title">Amazing Blog Post</h3>
+                            <div class="news-card-upload-info">
+                                <p class="news-card-author">By admin</p>
+                                <a class="news-card-comment" href="#"></a>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="news-card-upload-date">
+                        <p class="news-card-upload-date-day"></p>
+                        <p class="news-card-upload-date-month"></p>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <a class="news-card-link" href="#">
+                        <img alt="waterfall, man and girl" class="news-card-image"
+                             src="images/breaking_news/breaking_news7.png">
+                        <div class="news-card-info">
+                            <h3 class="news-card-title">Amazing Blog Post</h3>
+                            <div class="news-card-upload-info">
+                                <p class="news-card-author">By admin</p>
+                                <a class="news-card-comment" href="#"></a>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="news-card-upload-date">
+                        <p class="news-card-upload-date-day"></p>
+                        <p class="news-card-upload-date-month"></p>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <a class="news-card-link" href="#">
+                        <img alt="document" class="news-card-image"
+                             src="images/breaking_news/breaking_news8.png">
+                        <div class="news-card-info">
+                            <h3 class="news-card-title">Amazing Blog Post</h3>
+                            <div class="news-card-upload-info">
+                                <p class="news-card-author">By admin</p>
+                                <a class="news-card-comment" href="#"></a>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="news-card-upload-date">
+                        <p class="news-card-upload-date-day"></p>
+                        <p class="news-card-upload-date-month"></p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section class="feedback-wrapper">
+            <div class="feedback container">
+                <h2 class="section-title section-title-feedback">What People Say About theHam</h2>
+                <img alt="quotes" class="feedback-quotes" src="images/quotes.png">
+                <div class="feedback-info-container active" data-id='1'>
+                    <p class="feedback-text">Integer dignissim, augue tempus ultricies luctus, quam dui laoreet sem, non
+                        dictum odio nisi quis massa. Morbi pulvinar odio eget aliquam facilisis. Tempus ultricies
+                        luctus,
+                        quam dui laoreet sem, non dictum odio nisi quis massa. Morbi pulvinar odio eget aliquam
+                        facilisis.</p>
+                    <div class="feedback-info">
+                        <p class="feedback-name">HASAN ALI</p>
+                        <p class="feedback-speciality">UX Designer</p>
+                    </div>
+                    <div class="slider-big-photo">
+                        <img alt="human face" class="slider-big-photo-img slider-photo-img1"
+                             src="images/feedback/feedback1.jpg">
+                    </div>
+                </div>
+                <div class="feedback-info-container" data-id='2'>
+                    <p class="feedback-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab amet fugiat
+                        voluptatem voluptatibus? Ab ad aut autem commodi distinctio doloremque doloribus eaque eligendi
+                        eos?</p>
+                    <div class="feedback-info">
+                        <p class="feedback-name">Jane Lee</p>
+                        <p class="feedback-speciality">Photographer</p>
+                    </div>
+                    <div class="slider-big-photo">
+                        <img alt="human face" class="slider-big-photo-img slider-photo-img2"
+                             src="images/feedback/feedback2.jpg">
+                    </div>
+                </div>
+                <div class="feedback-info-container" data-id='3'>
+                    <p class="feedback-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut consequatur
+                        eos magnam modi optio suscipit tenetur. Aliquid aperiam architecto consectetur, ducimus eaque
+                        ex, id magnam officia pariatur quasi qui ratione sunt temporibus voluptatibus.</p>
+                    <div class="feedback-info">
+                        <p class="feedback-name">Anhelina Kit</p>
+                        <p class="feedback-speciality">Project manager</p>
+                    </div>
+                    <div class="slider-big-photo">
+                        <img alt="human face" class="slider-big-photo-img slider-photo-img3"
+                             src="images/feedback/feedback3.png">
+                    </div>
+                </div>
+                <div class="feedback-info-container" data-id='4'>
+                    <p class="feedback-text">Integer dignissim, augue tempus ultricies luctus, quam dui laoreet sem, non
+                        dictum odio nisi quis massa. Morbi pulvinar odio eget aliquam facilisis. Tempus ultricies
+                        luctus,
+                        quam dui laoreet sem, non dictum odio nisi quis massa. Morbi pulvinar odio eget aliquam
+                        facilisis.</p>
+                    <div class="feedback-info">
+                        <p class="feedback-name">Robert Ferguson</p>
+                        <p class="feedback-speciality">Forester</p>
+                    </div>
+                    <div class="slider-big-photo">
+                        <img alt="human face" class="slider-big-photo-img slider-photo-img4"
+                             src="images/feedback/feedback4.jpg">
+                    </div>
+                </div>
+
+                <div class="slider-carousel">
+                    <button class="slider-carousel-btn slider-carousel-btn-prev" data-name="prev"></button>
+                    <ul class="slider-carousel-list">
+                        <li class="slider-carousel-item active" data-id='1'><img alt="human face"
+                                                                                 class="slider-carousel-item-img slider-photo-img1"
+                                                                                 data-id='1'
+                                                                                 src="images/feedback/feedback1.jpg">
+                        </li>
+                        <li class="slider-carousel-item" data-id='2'><img alt="human face"
+                                                                          class="slider-carousel-item-img slider-photo-img2"
+                                                                          data-id='2'
+                                                                          src="images/feedback/feedback2.jpg"></li>
+                        <li class="slider-carousel-item" data-id='3'><img alt="human face"
+                                                                          class="slider-carousel-item-img slider-photo-img3"
+                                                                          data-id='3'
+                                                                          src="images/feedback/feedback3.png"></li>
+                        <li class="slider-carousel-item" data-id='4'><img alt="human face"
+                                                                          class="slider-carousel-item-img slider-photo-img4"
+                                                                          data-id='4'
+                                                                          src="images/feedback/feedback4.jpg"></li>
+                    </ul>
+                    <button class="slider-carousel-btn slider-carousel-btn-next" data-name="next"></button>
+                </div>
+
+            </div>
+
+        </section>
+        <section class="container images-gallery-wrapper">
+            <h2 class="section-title section-title-images-gallery">Gallery of best images</h2>
+            <div class="images-gallery-grid">
+                <div class="grid-sizer"></div>
+                <div class="images-gallery-grid-item images-gallery-grid-item1 image-placeholder">
+                    <div class="images-gallery-item-pop-up">
+                        <div class="images-gallery-item-pop-up-magnifying-glass">
+                            <svg fill="none" height="10" viewBox="0 0 10 10" width="10"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.37262 5.66669L9 9" stroke="white"/>
+                                <circle cx="3.5" cy="3.5" r="3" stroke="white"/>
+                            </svg>
+                        </div>
+                        <div class="images-gallery-item-pop-up-full-screen">
+                            <svg fill="none" height="11" viewBox="0 0 12 11" width="12"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.700061 10C0.700061 10.1657 0.834376 10.3 1.00006 10.3L3.70006 10.3C3.86575 10.3 4.00006 10.1657 4.00006 10C4.00006 9.83431 3.86575 9.7 3.70006 9.7H1.30006V7.3C1.30006 7.13431 1.16575 7 1.00006 7C0.834376 7 0.700061 7.13431 0.700061 7.3L0.700061 10ZM3.78793 6.78787L0.787929 9.78787L1.21219 10.2121L4.21219 7.21213L3.78793 6.78787Z"
+                                      fill="#F8FCFE"/>
+                                <path d="M0.999864 0.700202C0.834179 0.700267 0.699917 0.834634 0.699982 1.00032L0.701042 3.70032C0.701107 3.866 0.835474 4.00027 1.00116 4.0002C1.16685 4.00014 1.30111 3.86577 1.30104 3.70008L1.3001 1.30008L3.7001 1.29914C3.86579 1.29908 4.00005 1.16471 3.99998 0.999024C3.99992 0.833338 3.86555 0.699077 3.69986 0.699141L0.999864 0.700202ZM4.21321 3.78681L1.21203 0.787986L0.787933 1.21242L3.78911 4.21124L4.21321 3.78681Z"
+                                      fill="#F8FCFE"/>
+                                <path d="M11.3001 1C11.3001 0.834315 11.1657 0.7 11.0001 0.7L8.30006 0.7C8.13438 0.7 8.00006 0.834315 8.00006 1C8.00006 1.16569 8.13438 1.3 8.30006 1.3H10.7001V3.7C10.7001 3.86569 10.8344 4 11.0001 4C11.1657 4 11.3001 3.86569 11.3001 3.7L11.3001 1ZM8.21219 4.21213L11.2122 1.21213L10.7879 0.787868L7.78793 3.78787L8.21219 4.21213Z"
+                                      fill="#F8FCFE"/>
+                                <path d="M11.0297 10.2727C11.1954 10.2712 11.3285 10.1357 11.327 9.97001L11.3026 7.27012C11.3011 7.10445 11.1656 6.97135 10.9999 6.97285C10.8342 6.97435 10.7011 7.10988 10.7026 7.27555L10.7243 9.67546L8.32442 9.69717C8.15874 9.69867 8.02565 9.8342 8.02715 9.99988C8.02865 10.1656 8.16417 10.2986 8.32985 10.2971L11.0297 10.2727ZM7.7898 7.21404L10.8168 10.1868L11.2372 9.75869L8.2102 6.78596L7.7898 7.21404Z"
+                                      fill="#F8FCFE"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="images-gallery-grid-item images-gallery-grid-item2 image-placeholder">
+                    <div class="images-gallery-item-pop-up">
+                        <div class="images-gallery-item-pop-up-magnifying-glass">
+                            <svg fill="none" height="10" viewBox="0 0 10 10" width="10"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.37262 5.66669L9 9" stroke="white"/>
+                                <circle cx="3.5" cy="3.5" r="3" stroke="white"/>
+                            </svg>
+                        </div>
+                        <div class="images-gallery-item-pop-up-full-screen">
+                            <svg fill="none" height="11" viewBox="0 0 12 11" width="12"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.700061 10C0.700061 10.1657 0.834376 10.3 1.00006 10.3L3.70006 10.3C3.86575 10.3 4.00006 10.1657 4.00006 10C4.00006 9.83431 3.86575 9.7 3.70006 9.7H1.30006V7.3C1.30006 7.13431 1.16575 7 1.00006 7C0.834376 7 0.700061 7.13431 0.700061 7.3L0.700061 10ZM3.78793 6.78787L0.787929 9.78787L1.21219 10.2121L4.21219 7.21213L3.78793 6.78787Z"
+                                      fill="#F8FCFE"/>
+                                <path d="M0.999864 0.700202C0.834179 0.700267 0.699917 0.834634 0.699982 1.00032L0.701042 3.70032C0.701107 3.866 0.835474 4.00027 1.00116 4.0002C1.16685 4.00014 1.30111 3.86577 1.30104 3.70008L1.3001 1.30008L3.7001 1.29914C3.86579 1.29908 4.00005 1.16471 3.99998 0.999024C3.99992 0.833338 3.86555 0.699077 3.69986 0.699141L0.999864 0.700202ZM4.21321 3.78681L1.21203 0.787986L0.787933 1.21242L3.78911 4.21124L4.21321 3.78681Z"
+                                      fill="#F8FCFE"/>
+                                <path d="M11.3001 1C11.3001 0.834315 11.1657 0.7 11.0001 0.7L8.30006 0.7C8.13438 0.7 8.00006 0.834315 8.00006 1C8.00006 1.16569 8.13438 1.3 8.30006 1.3H10.7001V3.7C10.7001 3.86569 10.8344 4 11.0001 4C11.1657 4 11.3001 3.86569 11.3001 3.7L11.3001 1ZM8.21219 4.21213L11.2122 1.21213L10.7879 0.787868L7.78793 3.78787L8.21219 4.21213Z"
+                                      fill="#F8FCFE"/>
+                                <path d="M11.0297 10.2727C11.1954 10.2712 11.3285 10.1357 11.327 9.97001L11.3026 7.27012C11.3011 7.10445 11.1656 6.97135 10.9999 6.97285C10.8342 6.97435 10.7011 7.10988 10.7026 7.27555L10.7243 9.67546L8.32442 9.69717C8.15874 9.69867 8.02565 9.8342 8.02715 9.99988C8.02865 10.1656 8.16417 10.2986 8.32985 10.2971L11.0297 10.2727ZM7.7898 7.21404L10.8168 10.1868L11.2372 9.75869L8.2102 6.78596L7.7898 7.21404Z"
+                                      fill="#F8FCFE"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="images-gallery-grid-item images-gallery-grid-item3">
+                    <div class="subitem-container50">
+                        <div class="subitem-sizer50"></div>
+                        <div class="subitem-container50-item subitem-container50-item1 image-placeholder">
+                            <div class="images-gallery-item-pop-up">
+                                <div class="images-gallery-item-pop-up-magnifying-glass">
+                                    <svg fill="none" height="10" viewBox="0 0 10 10" width="10"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5.37262 5.66669L9 9" stroke="white"/>
+                                        <circle cx="3.5" cy="3.5" r="3" stroke="white"/>
+                                    </svg>
+                                </div>
+                                <div class="images-gallery-item-pop-up-full-screen">
+                                    <svg fill="none" height="11" viewBox="0 0 12 11" width="12"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0.700061 10C0.700061 10.1657 0.834376 10.3 1.00006 10.3L3.70006 10.3C3.86575 10.3 4.00006 10.1657 4.00006 10C4.00006 9.83431 3.86575 9.7 3.70006 9.7H1.30006V7.3C1.30006 7.13431 1.16575 7 1.00006 7C0.834376 7 0.700061 7.13431 0.700061 7.3L0.700061 10ZM3.78793 6.78787L0.787929 9.78787L1.21219 10.2121L4.21219 7.21213L3.78793 6.78787Z"
+                                              fill="#F8FCFE"/>
+                                        <path d="M0.999864 0.700202C0.834179 0.700267 0.699917 0.834634 0.699982 1.00032L0.701042 3.70032C0.701107 3.866 0.835474 4.00027 1.00116 4.0002C1.16685 4.00014 1.30111 3.86577 1.30104 3.70008L1.3001 1.30008L3.7001 1.29914C3.86579 1.29908 4.00005 1.16471 3.99998 0.999024C3.99992 0.833338 3.86555 0.699077 3.69986 0.699141L0.999864 0.700202ZM4.21321 3.78681L1.21203 0.787986L0.787933 1.21242L3.78911 4.21124L4.21321 3.78681Z"
+                                              fill="#F8FCFE"/>
+                                        <path d="M11.3001 1C11.3001 0.834315 11.1657 0.7 11.0001 0.7L8.30006 0.7C8.13438 0.7 8.00006 0.834315 8.00006 1C8.00006 1.16569 8.13438 1.3 8.30006 1.3H10.7001V3.7C10.7001 3.86569 10.8344 4 11.0001 4C11.1657 4 11.3001 3.86569 11.3001 3.7L11.3001 1ZM8.21219 4.21213L11.2122 1.21213L10.7879 0.787868L7.78793 3.78787L8.21219 4.21213Z"
+                                              fill="#F8FCFE"/>
+                                        <path d="M11.0297 10.2727C11.1954 10.2712 11.3285 10.1357 11.327 9.97001L11.3026 7.27012C11.3011 7.10445 11.1656 6.97135 10.9999 6.97285C10.8342 6.97435 10.7011 7.10988 10.7026 7.27555L10.7243 9.67546L8.32442 9.69717C8.15874 9.69867 8.02565 9.8342 8.02715 9.99988C8.02865 10.1656 8.16417 10.2986 8.32985 10.2971L11.0297 10.2727ZM7.7898 7.21404L10.8168 10.1868L11.2372 9.75869L8.2102 6.78596L7.7898 7.21404Z"
+                                              fill="#F8FCFE"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="subitem-container50-item subitem-container50-item2 image-placeholder">
+                            <div class="images-gallery-item-pop-up">
+                                <div class="images-gallery-item-pop-up-magnifying-glass">
+                                    <svg fill="none" height="10" viewBox="0 0 10 10" width="10"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5.37262 5.66669L9 9" stroke="white"/>
+                                        <circle cx="3.5" cy="3.5" r="3" stroke="white"/>
+                                    </svg>
+                                </div>
+                                <div class="images-gallery-item-pop-up-full-screen">
+                                    <svg fill="none" height="11" viewBox="0 0 12 11" width="12"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0.700061 10C0.700061 10.1657 0.834376 10.3 1.00006 10.3L3.70006 10.3C3.86575 10.3 4.00006 10.1657 4.00006 10C4.00006 9.83431 3.86575 9.7 3.70006 9.7H1.30006V7.3C1.30006 7.13431 1.16575 7 1.00006 7C0.834376 7 0.700061 7.13431 0.700061 7.3L0.700061 10ZM3.78793 6.78787L0.787929 9.78787L1.21219 10.2121L4.21219 7.21213L3.78793 6.78787Z"
+                                              fill="#F8FCFE"/>
+                                        <path d="M0.999864 0.700202C0.834179 0.700267 0.699917 0.834634 0.699982 1.00032L0.701042 3.70032C0.701107 3.866 0.835474 4.00027 1.00116 4.0002C1.16685 4.00014 1.30111 3.86577 1.30104 3.70008L1.3001 1.30008L3.7001 1.29914C3.86579 1.29908 4.00005 1.16471 3.99998 0.999024C3.99992 0.833338 3.86555 0.699077 3.69986 0.699141L0.999864 0.700202ZM4.21321 3.78681L1.21203 0.787986L0.787933 1.21242L3.78911 4.21124L4.21321 3.78681Z"
+                                              fill="#F8FCFE"/>
+                                        <path d="M11.3001 1C11.3001 0.834315 11.1657 0.7 11.0001 0.7L8.30006 0.7C8.13438 0.7 8.00006 0.834315 8.00006 1C8.00006 1.16569 8.13438 1.3 8.30006 1.3H10.7001V3.7C10.7001 3.86569 10.8344 4 11.0001 4C11.1657 4 11.3001 3.86569 11.3001 3.7L11.3001 1ZM8.21219 4.21213L11.2122 1.21213L10.7879 0.787868L7.78793 3.78787L8.21219 4.21213Z"
+                                              fill="#F8FCFE"/>
+                                        <path d="M11.0297 10.2727C11.1954 10.2712 11.3285 10.1357 11.327 9.97001L11.3026 7.27012C11.3011 7.10445 11.1656 6.97135 10.9999 6.97285C10.8342 6.97435 10.7011 7.10988 10.7026 7.27555L10.7243 9.67546L8.32442 9.69717C8.15874 9.69867 8.02565 9.8342 8.02715 9.99988C8.02865 10.1656 8.16417 10.2986 8.32985 10.2971L11.0297 10.2727ZM7.7898 7.21404L10.8168 10.1868L11.2372 9.75869L8.2102 6.78596L7.7898 7.21404Z"
+                                              fill="#F8FCFE"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="subitem-container33">
+                        <div class="images-gallery-grid-subitem-sizer"></div>
+                        <div class="images-gallery-grid-subitem images-gallery-grid-subitem3 image-placeholder">
+                            <div class="images-gallery-item-pop-up">
+                                <div class="images-gallery-item-pop-up-magnifying-glass">
+                                    <svg fill="none" height="10" viewBox="0 0 10 10" width="10"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5.37262 5.66669L9 9" stroke="white"/>
+                                        <circle cx="3.5" cy="3.5" r="3" stroke="white"/>
+                                    </svg>
+                                </div>
+                                <div class="images-gallery-item-pop-up-full-screen">
+                                    <svg fill="none" height="11" viewBox="0 0 12 11" width="12"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0.700061 10C0.700061 10.1657 0.834376 10.3 1.00006 10.3L3.70006 10.3C3.86575 10.3 4.00006 10.1657 4.00006 10C4.00006 9.83431 3.86575 9.7 3.70006 9.7H1.30006V7.3C1.30006 7.13431 1.16575 7 1.00006 7C0.834376 7 0.700061 7.13431 0.700061 7.3L0.700061 10ZM3.78793 6.78787L0.787929 9.78787L1.21219 10.2121L4.21219 7.21213L3.78793 6.78787Z"
+                                              fill="#F8FCFE"/>
+                                        <path d="M0.999864 0.700202C0.834179 0.700267 0.699917 0.834634 0.699982 1.00032L0.701042 3.70032C0.701107 3.866 0.835474 4.00027 1.00116 4.0002C1.16685 4.00014 1.30111 3.86577 1.30104 3.70008L1.3001 1.30008L3.7001 1.29914C3.86579 1.29908 4.00005 1.16471 3.99998 0.999024C3.99992 0.833338 3.86555 0.699077 3.69986 0.699141L0.999864 0.700202ZM4.21321 3.78681L1.21203 0.787986L0.787933 1.21242L3.78911 4.21124L4.21321 3.78681Z"
+                                              fill="#F8FCFE"/>
+                                        <path d="M11.3001 1C11.3001 0.834315 11.1657 0.7 11.0001 0.7L8.30006 0.7C8.13438 0.7 8.00006 0.834315 8.00006 1C8.00006 1.16569 8.13438 1.3 8.30006 1.3H10.7001V3.7C10.7001 3.86569 10.8344 4 11.0001 4C11.1657 4 11.3001 3.86569 11.3001 3.7L11.3001 1ZM8.21219 4.21213L11.2122 1.21213L10.7879 0.787868L7.78793 3.78787L8.21219 4.21213Z"
+                                              fill="#F8FCFE"/>
+                                        <path d="M11.0297 10.2727C11.1954 10.2712 11.3285 10.1357 11.327 9.97001L11.3026 7.27012C11.3011 7.10445 11.1656 6.97135 10.9999 6.97285C10.8342 6.97435 10.7011 7.10988 10.7026 7.27555L10.7243 9.67546L8.32442 9.69717C8.15874 9.69867 8.02565 9.8342 8.02715 9.99988C8.02865 10.1656 8.16417 10.2986 8.32985 10.2971L11.0297 10.2727ZM7.7898 7.21404L10.8168 10.1868L11.2372 9.75869L8.2102 6.78596L7.7898 7.21404Z"
+                                              fill="#F8FCFE"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="images-gallery-grid-subitem images-gallery-grid-subitem4 image-placeholder">
+                            <div class="images-gallery-item-pop-up">
+                                <div class="images-gallery-item-pop-up-magnifying-glass">
+                                    <svg fill="none" height="10" viewBox="0 0 10 10" width="10"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5.37262 5.66669L9 9" stroke="white"/>
+                                        <circle cx="3.5" cy="3.5" r="3" stroke="white"/>
+                                    </svg>
+                                </div>
+                                <div class="images-gallery-item-pop-up-full-screen">
+                                    <svg fill="none" height="11" viewBox="0 0 12 11" width="12"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0.700061 10C0.700061 10.1657 0.834376 10.3 1.00006 10.3L3.70006 10.3C3.86575 10.3 4.00006 10.1657 4.00006 10C4.00006 9.83431 3.86575 9.7 3.70006 9.7H1.30006V7.3C1.30006 7.13431 1.16575 7 1.00006 7C0.834376 7 0.700061 7.13431 0.700061 7.3L0.700061 10ZM3.78793 6.78787L0.787929 9.78787L1.21219 10.2121L4.21219 7.21213L3.78793 6.78787Z"
+                                              fill="#F8FCFE"/>
+                                        <path d="M0.999864 0.700202C0.834179 0.700267 0.699917 0.834634 0.699982 1.00032L0.701042 3.70032C0.701107 3.866 0.835474 4.00027 1.00116 4.0002C1.16685 4.00014 1.30111 3.86577 1.30104 3.70008L1.3001 1.30008L3.7001 1.29914C3.86579 1.29908 4.00005 1.16471 3.99998 0.999024C3.99992 0.833338 3.86555 0.699077 3.69986 0.699141L0.999864 0.700202ZM4.21321 3.78681L1.21203 0.787986L0.787933 1.21242L3.78911 4.21124L4.21321 3.78681Z"
+                                              fill="#F8FCFE"/>
+                                        <path d="M11.3001 1C11.3001 0.834315 11.1657 0.7 11.0001 0.7L8.30006 0.7C8.13438 0.7 8.00006 0.834315 8.00006 1C8.00006 1.16569 8.13438 1.3 8.30006 1.3H10.7001V3.7C10.7001 3.86569 10.8344 4 11.0001 4C11.1657 4 11.3001 3.86569 11.3001 3.7L11.3001 1ZM8.21219 4.21213L11.2122 1.21213L10.7879 0.787868L7.78793 3.78787L8.21219 4.21213Z"
+                                              fill="#F8FCFE"/>
+                                        <path d="M11.0297 10.2727C11.1954 10.2712 11.3285 10.1357 11.327 9.97001L11.3026 7.27012C11.3011 7.10445 11.1656 6.97135 10.9999 6.97285C10.8342 6.97435 10.7011 7.10988 10.7026 7.27555L10.7243 9.67546L8.32442 9.69717C8.15874 9.69867 8.02565 9.8342 8.02715 9.99988C8.02865 10.1656 8.16417 10.2986 8.32985 10.2971L11.0297 10.2727ZM7.7898 7.21404L10.8168 10.1868L11.2372 9.75869L8.2102 6.78596L7.7898 7.21404Z"
+                                              fill="#F8FCFE"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="images-gallery-grid-subitem images-gallery-grid-subitem5 image-placeholder">
+                            <div class="images-gallery-item-pop-up">
+                                <div class="images-gallery-item-pop-up-magnifying-glass">
+                                    <svg fill="none" height="10" viewBox="0 0 10 10" width="10"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5.37262 5.66669L9 9" stroke="white"/>
+                                        <circle cx="3.5" cy="3.5" r="3" stroke="white"/>
+                                    </svg>
+                                </div>
+                                <div class="images-gallery-item-pop-up-full-screen">
+                                    <svg fill="none" height="11" viewBox="0 0 12 11" width="12"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0.700061 10C0.700061 10.1657 0.834376 10.3 1.00006 10.3L3.70006 10.3C3.86575 10.3 4.00006 10.1657 4.00006 10C4.00006 9.83431 3.86575 9.7 3.70006 9.7H1.30006V7.3C1.30006 7.13431 1.16575 7 1.00006 7C0.834376 7 0.700061 7.13431 0.700061 7.3L0.700061 10ZM3.78793 6.78787L0.787929 9.78787L1.21219 10.2121L4.21219 7.21213L3.78793 6.78787Z"
+                                              fill="#F8FCFE"/>
+                                        <path d="M0.999864 0.700202C0.834179 0.700267 0.699917 0.834634 0.699982 1.00032L0.701042 3.70032C0.701107 3.866 0.835474 4.00027 1.00116 4.0002C1.16685 4.00014 1.30111 3.86577 1.30104 3.70008L1.3001 1.30008L3.7001 1.29914C3.86579 1.29908 4.00005 1.16471 3.99998 0.999024C3.99992 0.833338 3.86555 0.699077 3.69986 0.699141L0.999864 0.700202ZM4.21321 3.78681L1.21203 0.787986L0.787933 1.21242L3.78911 4.21124L4.21321 3.78681Z"
+                                              fill="#F8FCFE"/>
+                                        <path d="M11.3001 1C11.3001 0.834315 11.1657 0.7 11.0001 0.7L8.30006 0.7C8.13438 0.7 8.00006 0.834315 8.00006 1C8.00006 1.16569 8.13438 1.3 8.30006 1.3H10.7001V3.7C10.7001 3.86569 10.8344 4 11.0001 4C11.1657 4 11.3001 3.86569 11.3001 3.7L11.3001 1ZM8.21219 4.21213L11.2122 1.21213L10.7879 0.787868L7.78793 3.78787L8.21219 4.21213Z"
+                                              fill="#F8FCFE"/>
+                                        <path d="M11.0297 10.2727C11.1954 10.2712 11.3285 10.1357 11.327 9.97001L11.3026 7.27012C11.3011 7.10445 11.1656 6.97135 10.9999 6.97285C10.8342 6.97435 10.7011 7.10988 10.7026 7.27555L10.7243 9.67546L8.32442 9.69717C8.15874 9.69867 8.02565 9.8342 8.02715 9.99988C8.02865 10.1656 8.16417 10.2986 8.32985 10.2971L11.0297 10.2727ZM7.7898 7.21404L10.8168 10.1868L11.2372 9.75869L8.2102 6.78596L7.7898 7.21404Z"
+                                              fill="#F8FCFE"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="images-gallery-grid-subitem images-gallery-grid-subitem6 image-placeholder">
+                            <div class="images-gallery-item-pop-up">
+                                <div class="images-gallery-item-pop-up-magnifying-glass">
+                                    <svg fill="none" height="10" viewBox="0 0 10 10" width="10"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5.37262 5.66669L9 9" stroke="white"/>
+                                        <circle cx="3.5" cy="3.5" r="3" stroke="white"/>
+                                    </svg>
+                                </div>
+                                <div class="images-gallery-item-pop-up-full-screen">
+                                    <svg fill="none" height="11" viewBox="0 0 12 11" width="12"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0.700061 10C0.700061 10.1657 0.834376 10.3 1.00006 10.3L3.70006 10.3C3.86575 10.3 4.00006 10.1657 4.00006 10C4.00006 9.83431 3.86575 9.7 3.70006 9.7H1.30006V7.3C1.30006 7.13431 1.16575 7 1.00006 7C0.834376 7 0.700061 7.13431 0.700061 7.3L0.700061 10ZM3.78793 6.78787L0.787929 9.78787L1.21219 10.2121L4.21219 7.21213L3.78793 6.78787Z"
+                                              fill="#F8FCFE"/>
+                                        <path d="M0.999864 0.700202C0.834179 0.700267 0.699917 0.834634 0.699982 1.00032L0.701042 3.70032C0.701107 3.866 0.835474 4.00027 1.00116 4.0002C1.16685 4.00014 1.30111 3.86577 1.30104 3.70008L1.3001 1.30008L3.7001 1.29914C3.86579 1.29908 4.00005 1.16471 3.99998 0.999024C3.99992 0.833338 3.86555 0.699077 3.69986 0.699141L0.999864 0.700202ZM4.21321 3.78681L1.21203 0.787986L0.787933 1.21242L3.78911 4.21124L4.21321 3.78681Z"
+                                              fill="#F8FCFE"/>
+                                        <path d="M11.3001 1C11.3001 0.834315 11.1657 0.7 11.0001 0.7L8.30006 0.7C8.13438 0.7 8.00006 0.834315 8.00006 1C8.00006 1.16569 8.13438 1.3 8.30006 1.3H10.7001V3.7C10.7001 3.86569 10.8344 4 11.0001 4C11.1657 4 11.3001 3.86569 11.3001 3.7L11.3001 1ZM8.21219 4.21213L11.2122 1.21213L10.7879 0.787868L7.78793 3.78787L8.21219 4.21213Z"
+                                              fill="#F8FCFE"/>
+                                        <path d="M11.0297 10.2727C11.1954 10.2712 11.3285 10.1357 11.327 9.97001L11.3026 7.27012C11.3011 7.10445 11.1656 6.97135 10.9999 6.97285C10.8342 6.97435 10.7011 7.10988 10.7026 7.27555L10.7243 9.67546L8.32442 9.69717C8.15874 9.69867 8.02565 9.8342 8.02715 9.99988C8.02865 10.1656 8.16417 10.2986 8.32985 10.2971L11.0297 10.2727ZM7.7898 7.21404L10.8168 10.1868L11.2372 9.75869L8.2102 6.78596L7.7898 7.21404Z"
+                                              fill="#F8FCFE"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="images-gallery-grid-subitem images-gallery-grid-subitem7 image-placeholder">
+                            <div class="images-gallery-item-pop-up">
+                                <div class="images-gallery-item-pop-up-magnifying-glass">
+                                    <svg fill="none" height="10" viewBox="0 0 10 10" width="10"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5.37262 5.66669L9 9" stroke="white"/>
+                                        <circle cx="3.5" cy="3.5" r="3" stroke="white"/>
+                                    </svg>
+                                </div>
+                                <div class="images-gallery-item-pop-up-full-screen">
+                                    <svg fill="none" height="11" viewBox="0 0 12 11" width="12"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0.700061 10C0.700061 10.1657 0.834376 10.3 1.00006 10.3L3.70006 10.3C3.86575 10.3 4.00006 10.1657 4.00006 10C4.00006 9.83431 3.86575 9.7 3.70006 9.7H1.30006V7.3C1.30006 7.13431 1.16575 7 1.00006 7C0.834376 7 0.700061 7.13431 0.700061 7.3L0.700061 10ZM3.78793 6.78787L0.787929 9.78787L1.21219 10.2121L4.21219 7.21213L3.78793 6.78787Z"
+                                              fill="#F8FCFE"/>
+                                        <path d="M0.999864 0.700202C0.834179 0.700267 0.699917 0.834634 0.699982 1.00032L0.701042 3.70032C0.701107 3.866 0.835474 4.00027 1.00116 4.0002C1.16685 4.00014 1.30111 3.86577 1.30104 3.70008L1.3001 1.30008L3.7001 1.29914C3.86579 1.29908 4.00005 1.16471 3.99998 0.999024C3.99992 0.833338 3.86555 0.699077 3.69986 0.699141L0.999864 0.700202ZM4.21321 3.78681L1.21203 0.787986L0.787933 1.21242L3.78911 4.21124L4.21321 3.78681Z"
+                                              fill="#F8FCFE"/>
+                                        <path d="M11.3001 1C11.3001 0.834315 11.1657 0.7 11.0001 0.7L8.30006 0.7C8.13438 0.7 8.00006 0.834315 8.00006 1C8.00006 1.16569 8.13438 1.3 8.30006 1.3H10.7001V3.7C10.7001 3.86569 10.8344 4 11.0001 4C11.1657 4 11.3001 3.86569 11.3001 3.7L11.3001 1ZM8.21219 4.21213L11.2122 1.21213L10.7879 0.787868L7.78793 3.78787L8.21219 4.21213Z"
+                                              fill="#F8FCFE"/>
+                                        <path d="M11.0297 10.2727C11.1954 10.2712 11.3285 10.1357 11.327 9.97001L11.3026 7.27012C11.3011 7.10445 11.1656 6.97135 10.9999 6.97285C10.8342 6.97435 10.7011 7.10988 10.7026 7.27555L10.7243 9.67546L8.32442 9.69717C8.15874 9.69867 8.02565 9.8342 8.02715 9.99988C8.02865 10.1656 8.16417 10.2986 8.32985 10.2971L11.0297 10.2727ZM7.7898 7.21404L10.8168 10.1868L11.2372 9.75869L8.2102 6.78596L7.7898 7.21404Z"
+                                              fill="#F8FCFE"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="images-gallery-grid-subitem images-gallery-grid-subitem8 image-placeholder">
+                            <div class="images-gallery-item-pop-up">
+                                <div class="images-gallery-item-pop-up-magnifying-glass">
+                                    <svg fill="none" height="10" viewBox="0 0 10 10" width="10"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5.37262 5.66669L9 9" stroke="white"/>
+                                        <circle cx="3.5" cy="3.5" r="3" stroke="white"/>
+                                    </svg>
+                                </div>
+                                <div class="images-gallery-item-pop-up-full-screen">
+                                    <svg fill="none" height="11" viewBox="0 0 12 11" width="12"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0.700061 10C0.700061 10.1657 0.834376 10.3 1.00006 10.3L3.70006 10.3C3.86575 10.3 4.00006 10.1657 4.00006 10C4.00006 9.83431 3.86575 9.7 3.70006 9.7H1.30006V7.3C1.30006 7.13431 1.16575 7 1.00006 7C0.834376 7 0.700061 7.13431 0.700061 7.3L0.700061 10ZM3.78793 6.78787L0.787929 9.78787L1.21219 10.2121L4.21219 7.21213L3.78793 6.78787Z"
+                                              fill="#F8FCFE"/>
+                                        <path d="M0.999864 0.700202C0.834179 0.700267 0.699917 0.834634 0.699982 1.00032L0.701042 3.70032C0.701107 3.866 0.835474 4.00027 1.00116 4.0002C1.16685 4.00014 1.30111 3.86577 1.30104 3.70008L1.3001 1.30008L3.7001 1.29914C3.86579 1.29908 4.00005 1.16471 3.99998 0.999024C3.99992 0.833338 3.86555 0.699077 3.69986 0.699141L0.999864 0.700202ZM4.21321 3.78681L1.21203 0.787986L0.787933 1.21242L3.78911 4.21124L4.21321 3.78681Z"
+                                              fill="#F8FCFE"/>
+                                        <path d="M11.3001 1C11.3001 0.834315 11.1657 0.7 11.0001 0.7L8.30006 0.7C8.13438 0.7 8.00006 0.834315 8.00006 1C8.00006 1.16569 8.13438 1.3 8.30006 1.3H10.7001V3.7C10.7001 3.86569 10.8344 4 11.0001 4C11.1657 4 11.3001 3.86569 11.3001 3.7L11.3001 1ZM8.21219 4.21213L11.2122 1.21213L10.7879 0.787868L7.78793 3.78787L8.21219 4.21213Z"
+                                              fill="#F8FCFE"/>
+                                        <path d="M11.0297 10.2727C11.1954 10.2712 11.3285 10.1357 11.327 9.97001L11.3026 7.27012C11.3011 7.10445 11.1656 6.97135 10.9999 6.97285C10.8342 6.97435 10.7011 7.10988 10.7026 7.27555L10.7243 9.67546L8.32442 9.69717C8.15874 9.69867 8.02565 9.8342 8.02715 9.99988C8.02865 10.1656 8.16417 10.2986 8.32985 10.2971L11.0297 10.2727ZM7.7898 7.21404L10.8168 10.1868L11.2372 9.75869L8.2102 6.78596L7.7898 7.21404Z"
+                                              fill="#F8FCFE"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="images-gallery-grid-subitem images-gallery-grid-subitem9 image-placeholder">
+                            <div class="images-gallery-item-pop-up">
+                                <div class="images-gallery-item-pop-up-magnifying-glass">
+                                    <svg fill="none" height="10" viewBox="0 0 10 10" width="10"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5.37262 5.66669L9 9" stroke="white"/>
+                                        <circle cx="3.5" cy="3.5" r="3" stroke="white"/>
+                                    </svg>
+                                </div>
+                                <div class="images-gallery-item-pop-up-full-screen">
+                                    <svg fill="none" height="11" viewBox="0 0 12 11" width="12"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0.700061 10C0.700061 10.1657 0.834376 10.3 1.00006 10.3L3.70006 10.3C3.86575 10.3 4.00006 10.1657 4.00006 10C4.00006 9.83431 3.86575 9.7 3.70006 9.7H1.30006V7.3C1.30006 7.13431 1.16575 7 1.00006 7C0.834376 7 0.700061 7.13431 0.700061 7.3L0.700061 10ZM3.78793 6.78787L0.787929 9.78787L1.21219 10.2121L4.21219 7.21213L3.78793 6.78787Z"
+                                              fill="#F8FCFE"/>
+                                        <path d="M0.999864 0.700202C0.834179 0.700267 0.699917 0.834634 0.699982 1.00032L0.701042 3.70032C0.701107 3.866 0.835474 4.00027 1.00116 4.0002C1.16685 4.00014 1.30111 3.86577 1.30104 3.70008L1.3001 1.30008L3.7001 1.29914C3.86579 1.29908 4.00005 1.16471 3.99998 0.999024C3.99992 0.833338 3.86555 0.699077 3.69986 0.699141L0.999864 0.700202ZM4.21321 3.78681L1.21203 0.787986L0.787933 1.21242L3.78911 4.21124L4.21321 3.78681Z"
+                                              fill="#F8FCFE"/>
+                                        <path d="M11.3001 1C11.3001 0.834315 11.1657 0.7 11.0001 0.7L8.30006 0.7C8.13438 0.7 8.00006 0.834315 8.00006 1C8.00006 1.16569 8.13438 1.3 8.30006 1.3H10.7001V3.7C10.7001 3.86569 10.8344 4 11.0001 4C11.1657 4 11.3001 3.86569 11.3001 3.7L11.3001 1ZM8.21219 4.21213L11.2122 1.21213L10.7879 0.787868L7.78793 3.78787L8.21219 4.21213Z"
+                                              fill="#F8FCFE"/>
+                                        <path d="M11.0297 10.2727C11.1954 10.2712 11.3285 10.1357 11.327 9.97001L11.3026 7.27012C11.3011 7.10445 11.1656 6.97135 10.9999 6.97285C10.8342 6.97435 10.7011 7.10988 10.7026 7.27555L10.7243 9.67546L8.32442 9.69717C8.15874 9.69867 8.02565 9.8342 8.02715 9.99988C8.02865 10.1656 8.16417 10.2986 8.32985 10.2971L11.0297 10.2727ZM7.7898 7.21404L10.8168 10.1868L11.2372 9.75869L8.2102 6.78596L7.7898 7.21404Z"
+                                              fill="#F8FCFE"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="images-gallery-grid-subitem images-gallery-grid-subitem10 image-placeholder">
+                            <div class="images-gallery-item-pop-up">
+                                <div class="images-gallery-item-pop-up-magnifying-glass">
+                                    <svg fill="none" height="10" viewBox="0 0 10 10" width="10"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5.37262 5.66669L9 9" stroke="white"/>
+                                        <circle cx="3.5" cy="3.5" r="3" stroke="white"/>
+                                    </svg>
+                                </div>
+                                <div class="images-gallery-item-pop-up-full-screen">
+                                    <svg fill="none" height="11" viewBox="0 0 12 11" width="12"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0.700061 10C0.700061 10.1657 0.834376 10.3 1.00006 10.3L3.70006 10.3C3.86575 10.3 4.00006 10.1657 4.00006 10C4.00006 9.83431 3.86575 9.7 3.70006 9.7H1.30006V7.3C1.30006 7.13431 1.16575 7 1.00006 7C0.834376 7 0.700061 7.13431 0.700061 7.3L0.700061 10ZM3.78793 6.78787L0.787929 9.78787L1.21219 10.2121L4.21219 7.21213L3.78793 6.78787Z"
+                                              fill="#F8FCFE"/>
+                                        <path d="M0.999864 0.700202C0.834179 0.700267 0.699917 0.834634 0.699982 1.00032L0.701042 3.70032C0.701107 3.866 0.835474 4.00027 1.00116 4.0002C1.16685 4.00014 1.30111 3.86577 1.30104 3.70008L1.3001 1.30008L3.7001 1.29914C3.86579 1.29908 4.00005 1.16471 3.99998 0.999024C3.99992 0.833338 3.86555 0.699077 3.69986 0.699141L0.999864 0.700202ZM4.21321 3.78681L1.21203 0.787986L0.787933 1.21242L3.78911 4.21124L4.21321 3.78681Z"
+                                              fill="#F8FCFE"/>
+                                        <path d="M11.3001 1C11.3001 0.834315 11.1657 0.7 11.0001 0.7L8.30006 0.7C8.13438 0.7 8.00006 0.834315 8.00006 1C8.00006 1.16569 8.13438 1.3 8.30006 1.3H10.7001V3.7C10.7001 3.86569 10.8344 4 11.0001 4C11.1657 4 11.3001 3.86569 11.3001 3.7L11.3001 1ZM8.21219 4.21213L11.2122 1.21213L10.7879 0.787868L7.78793 3.78787L8.21219 4.21213Z"
+                                              fill="#F8FCFE"/>
+                                        <path d="M11.0297 10.2727C11.1954 10.2712 11.3285 10.1357 11.327 9.97001L11.3026 7.27012C11.3011 7.10445 11.1656 6.97135 10.9999 6.97285C10.8342 6.97435 10.7011 7.10988 10.7026 7.27555L10.7243 9.67546L8.32442 9.69717C8.15874 9.69867 8.02565 9.8342 8.02715 9.99988C8.02865 10.1656 8.16417 10.2986 8.32985 10.2971L11.0297 10.2727ZM7.7898 7.21404L10.8168 10.1868L11.2372 9.75869L8.2102 6.78596L7.7898 7.21404Z"
+                                              fill="#F8FCFE"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="images-gallery-grid-subitem images-gallery-grid-subitem11 image-placeholder">
+                            <div class="images-gallery-item-pop-up">
+                                <div class="images-gallery-item-pop-up-magnifying-glass">
+                                    <svg fill="none" height="10" viewBox="0 0 10 10" width="10"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5.37262 5.66669L9 9" stroke="white"/>
+                                        <circle cx="3.5" cy="3.5" r="3" stroke="white"/>
+                                    </svg>
+                                </div>
+                                <div class="images-gallery-item-pop-up-full-screen">
+                                    <svg fill="none" height="11" viewBox="0 0 12 11" width="12"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0.700061 10C0.700061 10.1657 0.834376 10.3 1.00006 10.3L3.70006 10.3C3.86575 10.3 4.00006 10.1657 4.00006 10C4.00006 9.83431 3.86575 9.7 3.70006 9.7H1.30006V7.3C1.30006 7.13431 1.16575 7 1.00006 7C0.834376 7 0.700061 7.13431 0.700061 7.3L0.700061 10ZM3.78793 6.78787L0.787929 9.78787L1.21219 10.2121L4.21219 7.21213L3.78793 6.78787Z"
+                                              fill="#F8FCFE"/>
+                                        <path d="M0.999864 0.700202C0.834179 0.700267 0.699917 0.834634 0.699982 1.00032L0.701042 3.70032C0.701107 3.866 0.835474 4.00027 1.00116 4.0002C1.16685 4.00014 1.30111 3.86577 1.30104 3.70008L1.3001 1.30008L3.7001 1.29914C3.86579 1.29908 4.00005 1.16471 3.99998 0.999024C3.99992 0.833338 3.86555 0.699077 3.69986 0.699141L0.999864 0.700202ZM4.21321 3.78681L1.21203 0.787986L0.787933 1.21242L3.78911 4.21124L4.21321 3.78681Z"
+                                              fill="#F8FCFE"/>
+                                        <path d="M11.3001 1C11.3001 0.834315 11.1657 0.7 11.0001 0.7L8.30006 0.7C8.13438 0.7 8.00006 0.834315 8.00006 1C8.00006 1.16569 8.13438 1.3 8.30006 1.3H10.7001V3.7C10.7001 3.86569 10.8344 4 11.0001 4C11.1657 4 11.3001 3.86569 11.3001 3.7L11.3001 1ZM8.21219 4.21213L11.2122 1.21213L10.7879 0.787868L7.78793 3.78787L8.21219 4.21213Z"
+                                              fill="#F8FCFE"/>
+                                        <path d="M11.0297 10.2727C11.1954 10.2712 11.3285 10.1357 11.327 9.97001L11.3026 7.27012C11.3011 7.10445 11.1656 6.97135 10.9999 6.97285C10.8342 6.97435 10.7011 7.10988 10.7026 7.27555L10.7243 9.67546L8.32442 9.69717C8.15874 9.69867 8.02565 9.8342 8.02715 9.99988C8.02865 10.1656 8.16417 10.2986 8.32985 10.2971L11.0297 10.2727ZM7.7898 7.21404L10.8168 10.1868L11.2372 9.75869L8.2102 6.78596L7.7898 7.21404Z"
+                                              fill="#F8FCFE"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="images-gallery-grid-item images-gallery-grid-item4 image-placeholder">
+                    <div class="images-gallery-item-pop-up">
+                        <div class="images-gallery-item-pop-up-magnifying-glass">
+                            <svg fill="none" height="10" viewBox="0 0 10 10" width="10"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.37262 5.66669L9 9" stroke="white"/>
+                                <circle cx="3.5" cy="3.5" r="3" stroke="white"/>
+                            </svg>
+                        </div>
+                        <div class="images-gallery-item-pop-up-full-screen">
+                            <svg fill="none" height="11" viewBox="0 0 12 11" width="12"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.700061 10C0.700061 10.1657 0.834376 10.3 1.00006 10.3L3.70006 10.3C3.86575 10.3 4.00006 10.1657 4.00006 10C4.00006 9.83431 3.86575 9.7 3.70006 9.7H1.30006V7.3C1.30006 7.13431 1.16575 7 1.00006 7C0.834376 7 0.700061 7.13431 0.700061 7.3L0.700061 10ZM3.78793 6.78787L0.787929 9.78787L1.21219 10.2121L4.21219 7.21213L3.78793 6.78787Z"
+                                      fill="#F8FCFE"/>
+                                <path d="M0.999864 0.700202C0.834179 0.700267 0.699917 0.834634 0.699982 1.00032L0.701042 3.70032C0.701107 3.866 0.835474 4.00027 1.00116 4.0002C1.16685 4.00014 1.30111 3.86577 1.30104 3.70008L1.3001 1.30008L3.7001 1.29914C3.86579 1.29908 4.00005 1.16471 3.99998 0.999024C3.99992 0.833338 3.86555 0.699077 3.69986 0.699141L0.999864 0.700202ZM4.21321 3.78681L1.21203 0.787986L0.787933 1.21242L3.78911 4.21124L4.21321 3.78681Z"
+                                      fill="#F8FCFE"/>
+                                <path d="M11.3001 1C11.3001 0.834315 11.1657 0.7 11.0001 0.7L8.30006 0.7C8.13438 0.7 8.00006 0.834315 8.00006 1C8.00006 1.16569 8.13438 1.3 8.30006 1.3H10.7001V3.7C10.7001 3.86569 10.8344 4 11.0001 4C11.1657 4 11.3001 3.86569 11.3001 3.7L11.3001 1ZM8.21219 4.21213L11.2122 1.21213L10.7879 0.787868L7.78793 3.78787L8.21219 4.21213Z"
+                                      fill="#F8FCFE"/>
+                                <path d="M11.0297 10.2727C11.1954 10.2712 11.3285 10.1357 11.327 9.97001L11.3026 7.27012C11.3011 7.10445 11.1656 6.97135 10.9999 6.97285C10.8342 6.97435 10.7011 7.10988 10.7026 7.27555L10.7243 9.67546L8.32442 9.69717C8.15874 9.69867 8.02565 9.8342 8.02715 9.99988C8.02865 10.1656 8.16417 10.2986 8.32985 10.2971L11.0297 10.2727ZM7.7898 7.21404L10.8168 10.1868L11.2372 9.75869L8.2102 6.78596L7.7898 7.21404Z"
+                                      fill="#F8FCFE"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="images-gallery-grid-item images-gallery-grid-item5 image-placeholder">
+                    <div class="images-gallery-item-pop-up">
+                        <div class="images-gallery-item-pop-up-magnifying-glass">
+                            <svg fill="none" height="10" viewBox="0 0 10 10" width="10"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.37262 5.66669L9 9" stroke="white"/>
+                                <circle cx="3.5" cy="3.5" r="3" stroke="white"/>
+                            </svg>
+                        </div>
+                        <div class="images-gallery-item-pop-up-full-screen">
+                            <svg fill="none" height="11" viewBox="0 0 12 11" width="12"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.700061 10C0.700061 10.1657 0.834376 10.3 1.00006 10.3L3.70006 10.3C3.86575 10.3 4.00006 10.1657 4.00006 10C4.00006 9.83431 3.86575 9.7 3.70006 9.7H1.30006V7.3C1.30006 7.13431 1.16575 7 1.00006 7C0.834376 7 0.700061 7.13431 0.700061 7.3L0.700061 10ZM3.78793 6.78787L0.787929 9.78787L1.21219 10.2121L4.21219 7.21213L3.78793 6.78787Z"
+                                      fill="#F8FCFE"/>
+                                <path d="M0.999864 0.700202C0.834179 0.700267 0.699917 0.834634 0.699982 1.00032L0.701042 3.70032C0.701107 3.866 0.835474 4.00027 1.00116 4.0002C1.16685 4.00014 1.30111 3.86577 1.30104 3.70008L1.3001 1.30008L3.7001 1.29914C3.86579 1.29908 4.00005 1.16471 3.99998 0.999024C3.99992 0.833338 3.86555 0.699077 3.69986 0.699141L0.999864 0.700202ZM4.21321 3.78681L1.21203 0.787986L0.787933 1.21242L3.78911 4.21124L4.21321 3.78681Z"
+                                      fill="#F8FCFE"/>
+                                <path d="M11.3001 1C11.3001 0.834315 11.1657 0.7 11.0001 0.7L8.30006 0.7C8.13438 0.7 8.00006 0.834315 8.00006 1C8.00006 1.16569 8.13438 1.3 8.30006 1.3H10.7001V3.7C10.7001 3.86569 10.8344 4 11.0001 4C11.1657 4 11.3001 3.86569 11.3001 3.7L11.3001 1ZM8.21219 4.21213L11.2122 1.21213L10.7879 0.787868L7.78793 3.78787L8.21219 4.21213Z"
+                                      fill="#F8FCFE"/>
+                                <path d="M11.0297 10.2727C11.1954 10.2712 11.3285 10.1357 11.327 9.97001L11.3026 7.27012C11.3011 7.10445 11.1656 6.97135 10.9999 6.97285C10.8342 6.97435 10.7011 7.10988 10.7026 7.27555L10.7243 9.67546L8.32442 9.69717C8.15874 9.69867 8.02565 9.8342 8.02715 9.99988C8.02865 10.1656 8.16417 10.2986 8.32985 10.2971L11.0297 10.2727ZM7.7898 7.21404L10.8168 10.1868L11.2372 9.75869L8.2102 6.78596L7.7898 7.21404Z"
+                                      fill="#F8FCFE"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="images-gallery-grid-item images-gallery-grid-item6 image-placeholder">
+                    <div class="images-gallery-item-pop-up">
+                        <div class="images-gallery-item-pop-up-magnifying-glass">
+                            <svg fill="none" height="10" viewBox="0 0 10 10" width="10"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.37262 5.66669L9 9" stroke="white"/>
+                                <circle cx="3.5" cy="3.5" r="3" stroke="white"/>
+                            </svg>
+                        </div>
+                        <div class="images-gallery-item-pop-up-full-screen">
+                            <svg fill="none" height="11" viewBox="0 0 12 11" width="12"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.700061 10C0.700061 10.1657 0.834376 10.3 1.00006 10.3L3.70006 10.3C3.86575 10.3 4.00006 10.1657 4.00006 10C4.00006 9.83431 3.86575 9.7 3.70006 9.7H1.30006V7.3C1.30006 7.13431 1.16575 7 1.00006 7C0.834376 7 0.700061 7.13431 0.700061 7.3L0.700061 10ZM3.78793 6.78787L0.787929 9.78787L1.21219 10.2121L4.21219 7.21213L3.78793 6.78787Z"
+                                      fill="#F8FCFE"/>
+                                <path d="M0.999864 0.700202C0.834179 0.700267 0.699917 0.834634 0.699982 1.00032L0.701042 3.70032C0.701107 3.866 0.835474 4.00027 1.00116 4.0002C1.16685 4.00014 1.30111 3.86577 1.30104 3.70008L1.3001 1.30008L3.7001 1.29914C3.86579 1.29908 4.00005 1.16471 3.99998 0.999024C3.99992 0.833338 3.86555 0.699077 3.69986 0.699141L0.999864 0.700202ZM4.21321 3.78681L1.21203 0.787986L0.787933 1.21242L3.78911 4.21124L4.21321 3.78681Z"
+                                      fill="#F8FCFE"/>
+                                <path d="M11.3001 1C11.3001 0.834315 11.1657 0.7 11.0001 0.7L8.30006 0.7C8.13438 0.7 8.00006 0.834315 8.00006 1C8.00006 1.16569 8.13438 1.3 8.30006 1.3H10.7001V3.7C10.7001 3.86569 10.8344 4 11.0001 4C11.1657 4 11.3001 3.86569 11.3001 3.7L11.3001 1ZM8.21219 4.21213L11.2122 1.21213L10.7879 0.787868L7.78793 3.78787L8.21219 4.21213Z"
+                                      fill="#F8FCFE"/>
+                                <path d="M11.0297 10.2727C11.1954 10.2712 11.3285 10.1357 11.327 9.97001L11.3026 7.27012C11.3011 7.10445 11.1656 6.97135 10.9999 6.97285C10.8342 6.97435 10.7011 7.10988 10.7026 7.27555L10.7243 9.67546L8.32442 9.69717C8.15874 9.69867 8.02565 9.8342 8.02715 9.99988C8.02865 10.1656 8.16417 10.2986 8.32985 10.2971L11.0297 10.2727ZM7.7898 7.21404L10.8168 10.1868L11.2372 9.75869L8.2102 6.78596L7.7898 7.21404Z"
+                                      fill="#F8FCFE"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="images-gallery-grid-item images-gallery-grid-item7 image-placeholder">
+                    <div class="images-gallery-item-pop-up">
+                        <div class="images-gallery-item-pop-up-magnifying-glass">
+                            <svg fill="none" height="10" viewBox="0 0 10 10" width="10"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.37262 5.66669L9 9" stroke="white"/>
+                                <circle cx="3.5" cy="3.5" r="3" stroke="white"/>
+                            </svg>
+                        </div>
+                        <div class="images-gallery-item-pop-up-full-screen">
+                            <svg fill="none" height="11" viewBox="0 0 12 11" width="12"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.700061 10C0.700061 10.1657 0.834376 10.3 1.00006 10.3L3.70006 10.3C3.86575 10.3 4.00006 10.1657 4.00006 10C4.00006 9.83431 3.86575 9.7 3.70006 9.7H1.30006V7.3C1.30006 7.13431 1.16575 7 1.00006 7C0.834376 7 0.700061 7.13431 0.700061 7.3L0.700061 10ZM3.78793 6.78787L0.787929 9.78787L1.21219 10.2121L4.21219 7.21213L3.78793 6.78787Z"
+                                      fill="#F8FCFE"/>
+                                <path d="M0.999864 0.700202C0.834179 0.700267 0.699917 0.834634 0.699982 1.00032L0.701042 3.70032C0.701107 3.866 0.835474 4.00027 1.00116 4.0002C1.16685 4.00014 1.30111 3.86577 1.30104 3.70008L1.3001 1.30008L3.7001 1.29914C3.86579 1.29908 4.00005 1.16471 3.99998 0.999024C3.99992 0.833338 3.86555 0.699077 3.69986 0.699141L0.999864 0.700202ZM4.21321 3.78681L1.21203 0.787986L0.787933 1.21242L3.78911 4.21124L4.21321 3.78681Z"
+                                      fill="#F8FCFE"/>
+                                <path d="M11.3001 1C11.3001 0.834315 11.1657 0.7 11.0001 0.7L8.30006 0.7C8.13438 0.7 8.00006 0.834315 8.00006 1C8.00006 1.16569 8.13438 1.3 8.30006 1.3H10.7001V3.7C10.7001 3.86569 10.8344 4 11.0001 4C11.1657 4 11.3001 3.86569 11.3001 3.7L11.3001 1ZM8.21219 4.21213L11.2122 1.21213L10.7879 0.787868L7.78793 3.78787L8.21219 4.21213Z"
+                                      fill="#F8FCFE"/>
+                                <path d="M11.0297 10.2727C11.1954 10.2712 11.3285 10.1357 11.327 9.97001L11.3026 7.27012C11.3011 7.10445 11.1656 6.97135 10.9999 6.97285C10.8342 6.97435 10.7011 7.10988 10.7026 7.27555L10.7243 9.67546L8.32442 9.69717C8.15874 9.69867 8.02565 9.8342 8.02715 9.99988C8.02865 10.1656 8.16417 10.2986 8.32985 10.2971L11.0297 10.2727ZM7.7898 7.21404L10.8168 10.1868L11.2372 9.75869L8.2102 6.78596L7.7898 7.21404Z"
+                                      fill="#F8FCFE"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="images-gallery-grid-item images-gallery-grid-item8 image-placeholder">
+                    <div class="images-gallery-item-pop-up">
+                        <div class="images-gallery-item-pop-up-magnifying-glass">
+                            <svg fill="none" height="10" viewBox="0 0 10 10" width="10"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.37262 5.66669L9 9" stroke="white"/>
+                                <circle cx="3.5" cy="3.5" r="3" stroke="white"/>
+                            </svg>
+                        </div>
+                        <div class="images-gallery-item-pop-up-full-screen">
+                            <svg fill="none" height="11" viewBox="0 0 12 11" width="12"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.700061 10C0.700061 10.1657 0.834376 10.3 1.00006 10.3L3.70006 10.3C3.86575 10.3 4.00006 10.1657 4.00006 10C4.00006 9.83431 3.86575 9.7 3.70006 9.7H1.30006V7.3C1.30006 7.13431 1.16575 7 1.00006 7C0.834376 7 0.700061 7.13431 0.700061 7.3L0.700061 10ZM3.78793 6.78787L0.787929 9.78787L1.21219 10.2121L4.21219 7.21213L3.78793 6.78787Z"
+                                      fill="#F8FCFE"/>
+                                <path d="M0.999864 0.700202C0.834179 0.700267 0.699917 0.834634 0.699982 1.00032L0.701042 3.70032C0.701107 3.866 0.835474 4.00027 1.00116 4.0002C1.16685 4.00014 1.30111 3.86577 1.30104 3.70008L1.3001 1.30008L3.7001 1.29914C3.86579 1.29908 4.00005 1.16471 3.99998 0.999024C3.99992 0.833338 3.86555 0.699077 3.69986 0.699141L0.999864 0.700202ZM4.21321 3.78681L1.21203 0.787986L0.787933 1.21242L3.78911 4.21124L4.21321 3.78681Z"
+                                      fill="#F8FCFE"/>
+                                <path d="M11.3001 1C11.3001 0.834315 11.1657 0.7 11.0001 0.7L8.30006 0.7C8.13438 0.7 8.00006 0.834315 8.00006 1C8.00006 1.16569 8.13438 1.3 8.30006 1.3H10.7001V3.7C10.7001 3.86569 10.8344 4 11.0001 4C11.1657 4 11.3001 3.86569 11.3001 3.7L11.3001 1ZM8.21219 4.21213L11.2122 1.21213L10.7879 0.787868L7.78793 3.78787L8.21219 4.21213Z"
+                                      fill="#F8FCFE"/>
+                                <path d="M11.0297 10.2727C11.1954 10.2712 11.3285 10.1357 11.327 9.97001L11.3026 7.27012C11.3011 7.10445 11.1656 6.97135 10.9999 6.97285C10.8342 6.97435 10.7011 7.10988 10.7026 7.27555L10.7243 9.67546L8.32442 9.69717C8.15874 9.69867 8.02565 9.8342 8.02715 9.99988C8.02865 10.1656 8.16417 10.2986 8.32985 10.2971L11.0297 10.2727ZM7.7898 7.21404L10.8168 10.1868L11.2372 9.75869L8.2102 6.78596L7.7898 7.21404Z"
+                                      fill="#F8FCFE"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="btn btn-load-more btn-load-more-images-gallery">Load more</button>
+            <div class="clock-wrapper">
+                <div class="clock-loader clock-loader-images-gallery"></div>
+            </div>
+
+        </section>
+    </main>
+</div>
+<footer class="footer-bg">
+    <div class="container">
+        <p class="footer-copyright">© Copyright 2015 <span>theHam</span> | All Rights Reserved</p>
+    </div>
+</footer>
+</body>
+
+<script src="js/main.js"></script>
+</html>
