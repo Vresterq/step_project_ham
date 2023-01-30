@@ -256,12 +256,12 @@ let currentId = 1
 sliderButtons.forEach(btn => btn.addEventListener('click', e => {
     if (e.target.dataset.name === 'next') {
         currentId++
-        if (currentId > 4) currentId = 1
+        if (currentId > sliderImagesItem.length) currentId = 1
         changeSlide('next')
     }
     if (e.target.dataset.name === 'prev') {
         currentId--
-        if (currentId < 1) currentId = 4
+        if (currentId < 1) currentId = sliderImagesItem.length
         changeSlide('prev')
     }
 }))
