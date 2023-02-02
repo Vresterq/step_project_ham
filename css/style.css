@@ -381,7 +381,7 @@ body {
 .services-tabs-title.active::after {
     content: ' ';
     position: absolute;
-    bottom: -20%;
+    bottom: -19%;
     right: 35%;
     width: 0;
     height: 0;
