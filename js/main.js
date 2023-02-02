@@ -51,14 +51,17 @@ const serviceTabsContent = document.querySelectorAll('.services-tabs-content')
 
 serviceTabs.addEventListener('click', e => {
     const target = e.target
-    changeClassName(target, serviceTabsTitle, serviceTabsContent)
+    setTabTitleActive(target,serviceTabsTitle)
+    setContentActive(target, serviceTabsContent)
 })
 
-function changeClassName(target, tabsTitle, tabsContent) {
+function setTabTitleActive(target, tabsTitle){
     if (!tabsTitle) return
     tabsTitle.forEach(element => element.classList.remove('active'))
     target.classList.add('active')
+}
 
+function setContentActive(target,tabsContent){
     if (tabsContent) {
         tabsContent.forEach(element => {
             element.classList.remove('active')
@@ -78,87 +81,77 @@ const galleryCard = document.querySelector('.our-portfolio-gallery')
 const loadMoreWorkBtn = document.querySelector('.btn-load-more-portfolio')
 const clockLoaderPortfolio = document.querySelector('.clock-loader-portfolio')
 const titles = ['graphic-design', 'web-design', 'landing-pages', 'wordpress']
-let cardLimit = 36
+let cardLimit = 24
 let cardsLeft = 12
-let reduceFlag = false
+let itrStart = 0
 let timeoutLoadCards
 
 loadMoreWorkBtn.addEventListener('click', () => {
     const galleryCards = document.querySelectorAll('.gallery-card')
-    reduceCards()
     toggleHiddenClass(loadMoreWorkBtn)
     toggleHiddenClass(clockLoaderPortfolio)
-    timeoutLoadCards = setTimeout(loadCards, 2000, galleryCards)
-
+    timeoutLoadCards = setTimeout(loadCards, 2000, galleryCards, itrStart)
 })
 
 function toggleHiddenClass(target) {
     target.classList.toggle('hidden')
 }
 
-// Перевірка яку вкладку натиснули. Якщо All віднімаємо 12 завантажених карточок,
-// інше віднімаємо від cardLimit 9 вже завантажених карточок
-function reduceCards() {
-    let activeCategory = null
-    if (reduceFlag) return
-    portfolioCategory.forEach(category => {
-        if (category.classList.contains('active')) activeCategory = category.dataset.name
-    })
-    // Тут можна зробити обхід скільки карточок наразі мають клас active і відняти їх від кардліміту. назвати reduceCardLimit
-    if (activeCategory === 'all') {
-        cardLimit = cardLimit - 12
-        reduceFlag = true
-    } else {
-        cardLimit = cardLimit - 9
-        reduceFlag = true
-    }
-}
-
 // Ця функція додає клас active до карточок при натисненні кнопки load more
-function loadCards(galleryCards) {
+function loadCards(galleryCards, startIteration) {
     toggleHiddenClass(loadMoreWorkBtn)
     toggleHiddenClass(clockLoaderPortfolio)
     clearTimeout(timeoutLoadCards)
     if (galleryCards) {
-        for (let i = 0; i < galleryCards.length; i++) {
-            if (checkCardLimit()) return toggleHiddenClass(loadMoreWorkBtn)
-            if (cardsLeft < 1) return cardsLeft = 12
-            if (!galleryCards[i].classList.contains('active')) {
-                galleryCards[i].classList.add('active')
+        for (let i = startIteration; i < galleryCards.length; i+=3) {
+            if (!galleryCards[i].classList.contains('all')) {
+                galleryCards[i].classList.add('all')
                 cardsLeft--
                 cardLimit--
             }
+            if (cardsLeft < 1) {
+                itrStart+=1
+                setTabContentActive(galleryCards)
+                if (cardLimit === 0) toggleHiddenClass(loadMoreWorkBtn)
+                return cardsLeft = 12
+            }
         }
-        if (checkCardLimit()) return toggleHiddenClass(loadMoreWorkBtn)
     }
 }
 
-function checkCardLimit() {
-    if (cardLimit === 0) {
-        cardLimit = 27
-        cardsLeft = 12
-        return true
-    }
-}
 
 portfolioTabs.addEventListener('click', e => {
     const galleryCards = document.querySelectorAll('.gallery-card')
-    galleryCards.innerHTML = ''
     const target = e.target
     if (target.classList.contains('active')) return // Якщо повторно натиснули на категорію
-    changeClassName(target, portfolioCategory, galleryCards) // підсвічую категорію
-    /*Обнуляю флаг, кардліміт і зменшую cardLimit згідно з вибраною категорією
-    * Роблю це через те, якщо до цього була натиснута*/
-    cardLimit = 36
-    reduceFlag = false
-    reduceCards()
-    if (loadMoreWorkBtn.classList.contains('hidden')) toggleHiddenClass(loadMoreWorkBtn)
-    if (target.dataset.name === 'all') {
-        galleryCards.forEach(el => el.remove())
-        return addCards()
-    }
-
+    setTabTitleActive(target,portfolioCategory) // Підсвічую вибраний таб
+    setTabContentActive(galleryCards) // підсвічую категорію
 })
+
+function setTabContentActive(categoryContent){
+    let activeCategory = null
+    portfolioCategory.forEach(category => {
+        if (category.classList.contains('active')) activeCategory = category.dataset.name
+    })
+
+    if (activeCategory === 'all') {
+        categoryContent.forEach(element => {
+            element.classList.remove('active')
+            if (element.classList.contains('all')){
+                element.classList.add('active')
+            }
+        })
+    } else {
+        categoryContent.forEach(element => {
+            element.classList.remove('active')
+            if (element.classList.contains('all') && element.dataset.name === activeCategory){
+                element.classList.add('active')
+            }
+        })
+    }
+}
+
+// Ініціалізація перших 12 карток
 addCards()
 
 // Додаю всі доступні карточки до DOM та задаю клас active кожній 3-й (для завантаження перших 3-х карточок)
@@ -172,13 +165,13 @@ function addCards() {
 
 function appendCard(imageTitle, imageIndex, active = false) {
     let template
-    active ? template = createWorkSectionTemplate(imageTitle, imageIndex, 'active') : template = createWorkSectionTemplate(imageTitle, imageIndex)
+    active ? template = createWorkSectionTemplate(imageTitle, imageIndex, 'active', 'all') : template = createWorkSectionTemplate(imageTitle, imageIndex)
     galleryCard.insertAdjacentHTML('beforeend', template)
 }
 
-function createWorkSectionTemplate(imageTitle, imageIndex, active = '') {
+function createWorkSectionTemplate(imageTitle, imageIndex, active = '', all = '') {
     const cardPopUpSubtitle = createSubTitleName(imageTitle)
-    return `<div class="gallery-card ${active}" data-name="${imageTitle}"><img alt="${imageTitle}"
+    return `<div class="gallery-card ${active} ${all}" data-name="${imageTitle}"><img alt="${imageTitle}"
                                                                                class="gallery-card-img"
                                                                                src="images/${imageTitle}/${imageTitle}${imageIndex}.jpg">
                 <div class="card-pop-up">
